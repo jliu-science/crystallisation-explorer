@@ -1,5 +1,7 @@
 # Crystallisation Explorer
 
+Website: <https://jliu-science.github.io/crystallisation-explorer/>
+
 A responsive React + TypeScript + Vite outreach simulation for teaching ROY melt crystallisation through weighing, coverslip mounting, Linkam-stage loading, and heating/cooling/reheating video observation.
 
 ## Features
