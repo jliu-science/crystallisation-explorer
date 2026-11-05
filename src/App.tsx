@@ -298,6 +298,7 @@ export default function App() {
         </div>
 
         <div className="header-actions">
+          <a className="reset-button github-star" href="https://github.com/jliu-science/crystallisation-explorer" target="_blank" rel="noopener noreferrer">&#9734; Star on GitHub</a>
           <div className="video-menu-wrap">
             <button
               type="button"
