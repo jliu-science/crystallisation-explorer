@@ -298,7 +298,7 @@ export default function App() {
         </div>
 
         <div className="header-actions">
-          <a className="reset-button github-star" href="https://github.com/jliu-science/crystallisation-explorer" target="_blank" rel="noopener noreferrer">&#9734; Star on GitHub</a>
+          <a className="reset-button github-star" href="https://github.com/jliu-science/crystallisation-explorer" target="_blank" rel="noopener noreferrer" title="Leave your star if you found it helpful">&#9734; Found this useful? Star it on GitHub</a>
           <div className="video-menu-wrap">
             <button
               type="button"
