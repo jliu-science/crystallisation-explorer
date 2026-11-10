@@ -41,7 +41,7 @@ git add -A && git commit -m "update" && git push
 `npm run build && npx serve dist` (or `npm run preview`), then open http://localhost on the demo laptop.
 
 ## v4 — quiz removed
-Mini quiz removed at Joe's request: guide is back to 6 steps, the final feedback line now reads "Reheating complete. You have seen the full ROY polymorphism cycle!", and all quiz code/CSS is stripped.
+Mini quiz removed at the owner's request: guide is back to 6 steps, the final feedback line now reads "Reheating complete. You have seen the full ROY polymorphism cycle!", and all quiz code/CSS is stripped.
 
 ## v5 — durations corrected to real video lengths
 `PROCESS_DURATIONS` updated to the measured lengths (heating 19 s, cooling 5 s, reheating 76 s). Although onEnded drives step completion, the constant still fed: the countdown's starting value (the badge briefly flashed "34s" before the video corrected it), the "Next: reheat (34 s)" hints, the "Reheating for 34 seconds…" feedback, and the timer fallback when a video fails to load. All UI strings now derive from the constant, so future edits only need one change. A comment in the code explains exactly what the constant is used for.
@@ -59,3 +59,9 @@ The interpolated "≈ XX °C" badge has been removed (the edited footage made th
 ## v9 — Videos dropdown fix
 - The dropdown was being painted underneath the Guide/sim panels: every panel (and the header) uses backdrop-filter, which creates its own stacking context, and the header had no z-index, so later siblings covered the menu. Fixed with `.sim-header { position: relative; z-index: 200; }` — the menu now floats above all page content.
 - Durations removed from the menu labels: now just "Heating · melt", "Cooling · crystals", "Reheating · transformations".
+
+## v10 — typography restyle + star button wording
+- Page text was too heavy (font weights up to 900+). Now headings 600, buttons 500, body/step/hint text 400, labels about 600; title letter-spacing loosened from -0.055em to -0.03em.
+- Inter added via Google Fonts with a system-font fallback (works offline, slightly heavier look).
+- Star button now reads "☆ Found this useful? Star it on GitHub", with the hover tip "Leave your star if you found it helpful".
+- Functionality unchanged. New build output: `assets/dev-Bm1KlNbk.js` and `assets/dev-DqZ0TJ5g.css` (root `index.html` points to them); older hashed assets are kept.
